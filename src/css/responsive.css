@@ -1,9 +1,73 @@
-@media (max-width: 768px) and (max-width: 1024px) {
-	.collection-overlay {
-		padding: 15px;
+@media (max-width: 1024px) {
+	.section-cate,
+	.split,
+	.detail-grid,
+	.footer-grid,
+	.home-cats {
+		grid-template-columns: 1fr;
 	}
-	
-	.collection-overlay h3 {
-		font-size: 1.2rem;
+
+	.category-list {
+		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	}
+
+	.blog-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		margin: 0;
+		border-radius: 0;
+	}
+
+	.menu-btn {
+		display: grid;
+		place-items: center;
+	}
+
+	.nav-links {
+		display: none;
+		position: absolute;
+		top: 64px;
+		left: 12px;
+		right: 12px;
+		background: white;
+		border-radius: 12px;
+		padding: 12px;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 12px;
+		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+	}
+
+	.nav-links.open {
+		display: flex;
+	}
+
+	.subtitle {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.search input {
+		width: 100%;
+	}
+
+	.section-category,
+	.page-wrap,
+	.blog-section {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 16px 16px 0 0;
+	}
+
+	.hero-section {
+		height: 380px;
+	}
+
+	.site-footer {
+		padding: 32px 16px 20px;
 	}
 }

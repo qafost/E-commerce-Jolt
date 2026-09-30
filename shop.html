@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Stuffsus</title>
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body data-page="shop">
+  <div id="site-header"></div>
+  <main>
+    <section class="section-category" id="search">
+      <div class="subtitle steck">
+        <h2>The collection</h2>
+        <form class="search steck" id="searchForm">
+          <img src="public/icon/search.svg" alt="">
+          <input type="search" id="searchInput" placeholder="Search on Stuffsus" autocomplete="off">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="section-cate">
+        <aside class="edit-category">
+          <h3>Category</h3>
+          <div class="category-list" id="categoryList"></div>
+        </aside>
+        <div class="shop-panel">
+          <div class="shop-toolbar steck">
+            <p id="resultCount">0 products</p>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="name">Name A–Z</option>
+            </select>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-shell"></div>
+  <script src="src/javascript/data.js"></script>
+  <script src="src/javascript/store.js"></script>
+  <script src="src/javascript/shop.js"></script>
+</body>
+</html>

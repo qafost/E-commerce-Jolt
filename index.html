@@ -1,243 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>E-commerce | store Jolt</title>
+  <title>Home | Stuffsus</title>
   <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
 </head>
-
-<body>
-  <!-- container -->
-  <header>
-    <div class="toolbar">
-      <a href="index.html">Jolt</a>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Orders</a></li>
-          <li><a href="#">Track</a></li>
-          <a href="#">
-            <img src="public/icon/user.svg" alt="icon search">
-            <span>login</span>
-          </a>
-        </ul>
-      </nav>
-      <div class="icons">
-        <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m17 17l4 4M3 11a8 8 0 1 0 16 0a8 8 0 0 0-16 0" />
-          </svg>
-          <span>Search</span>
-        </a>
-        <div class="shop">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.26 9.696l1.385 9A2 2 0 0 1 18.67 21H5.33a2 2 0 0 1-1.977-2.304l1.385-9A2 2 0 0 1 6.716 8h10.568a2 2 0 0 1 1.977 1.696M14 5a2 2 0 1 0-4 0" />
-            </svg>
-            <span>chart</span>
-          </a>
-          <h6>(<span>0</span>)</h6>
-        </div>
-        <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M4 8l16 0" />
-            <path d="M4 16l16 0" />
-          </svg>
-          <span>Login</span>
-        </a>
-      </div>
-    </div>
-  </header>
-  
-  
+<body data-page="home">
+  <div id="site-header"></div>
   <main>
-    <section id="hero">
-      <div class="container">
-        <h1>Jolt Sport Project</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi maiores omnis dicta voluptates quis, eius ex rerum voluptate praesentium autem. Odit nihil maxime facilis, similique</p>
-        <a href="#" class="button">Shop Now</a>
+    <section class="section-category">
+      <div class="subtitle steck">
+        <h2>Give All You Need</h2>
+        <a class="btn" href="shop.html">Shop all</a>
+      </div>
+      <div class="home-cats">
+        <a href="shop.html?cat=audio" class="home-cat">Audio</a>
+        <a href="shop.html?cat=home" class="home-cat">Home</a>
+        <a href="shop.html?cat=sale" class="home-cat">Sale</a>
+        <a href="shop.html?cat=best" class="home-cat">Best sellers</a>
+      </div>
+      <div class="pad">
+        <h3>Best sellers</h3>
+        <div class="product-grid" id="featuredGrid"></div>
       </div>
     </section>
-    <section class="container">
-      <div id="products">
-        <div class="title">
-          <h2>New Arrivals</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum enim laboriosam fugiat fuga quae nam.</p>
-        </div>
-        <div class="All_product"></div>
+    <section class="blog-section">
+      <div class="steck">
+        <h2>From the journal</h2>
+        <a href="blog.html">Read all</a>
       </div>
-      </div>
+      <div class="blog-grid" id="homePosts"></div>
     </section>
-    
-    
-    
-    
-    <section id="advertisements">
-      <a href="#" class="button button_black">Shop Now</a>
-      <div class="advertisement">
-        <img src="public/img/background.jpg" alt="image advertisement">
-        <div class="title_ad">
-          <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad cumque reprehenderit nulla tempora ipsam error culpa!</p>
-          <h5>qavento FrontEnd good</h5>
-          <div class="adver">
-            <h2>50%</h2>
-            <a href="#" class="button button_black">See On Maps</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    
-    <section id="collections">
-      <div class="title_collection">
-        <h2>Explore Our Collections</h2>
-        <p>Shop the latest styles and exclusive offers curated for you.</p>
-      </div>
-      
-      <div id="collection">
-        <div class="collection-card">
-          <img src="public/img/colle1.jpg" alt="Men Collection">
-          <div class="collection-overlay">
-            <h3>Men’s Fashion</h3>
-            <p>Trendy styles for every occasion.</p>
-            <a href="#">Shop Now</a>
-          </div>
-        </div>
-        
-        <div class="collection-card">
-          <img src="public/img/colle2.jpg" alt="Women Collection">
-          <div class="collection-overlay">
-            <h3>Women’s Collection</h3>
-            <p>Elegant outfits for modern women.</p>
-            <a href="#">Discover</a>
-          </div>
-        </div>
-        
-        <div class="collection-card">
-          <img src="public/img/colle3.jpg" alt="Accessories">
-          <div class="collection-overlay">
-            <h3>Accessories</h3>
-            <p>Complete your look with style.</p>
-            <a href="#">Browse</a>
-          </div>
-        </div>
-        
-        <div class="collection-card">
-          <img src="public/img/colle4.jpg" alt="Tech Gadgets">
-          <div class="collection-overlay">
-            <h3>Tech Gadgets</h3>
-            <p>Smart devices that elevate your lifestyle.</p>
-            <a href="#">Explore</a>
-          </div>
-        </div>
-        
-        <div class="collection-card">
-          <img src="public/img/colle5.jpg" alt="Home Decor">
-          <div class="collection-overlay">
-            <h3>Home Decor</h3>
-            <p>Bring elegance and warmth to your space.</p>
-            <a href="#">View More</a>
-          </div>
-        </div>
-        
-        <div class="collection-card">
-          <img src="public/img/colle6.jpg" alt="Beauty">
-          <div class="collection-overlay">
-            <h3>Beauty & Care</h3>
-            <p>Discover products that make you glow.</p>
-            <a href="#">See All</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    
-    
-    <section id="email">
-      <div class="container">
-        <h2>Lorem ipsum dolor sit!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore rem minus veritatis tempora quas.</p>
-        <div>
-          <input type="email" placeholder="enter email">
-          <a href="#" class="button">subscribe</a>
-        </div>
-      </div>
-    </section>
-    
-    
-    
-    
-    <footer>
-      <div class="footer">
-        <div class="">
-          <h2>Jolt</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ab praesentium ullam beatae cumque sint voluptas nam.</p>
-        </div>
-        <div class="">
-          <h3>cousual</h3>
-          <li><a href="">google</a></li>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">telegram</a></li>
-          <li><a href="">installer</a></li>
-          <li><a href="">kali linux</a></li>
-        </div>
-        <div class="">
-          <h3>menu link</h3>
-          <li><a href="">github</a></li>
-          <li><a href="">ruby</a></li>
-          <li><a href="">python</a></li>
-          <li><a href="">JavaScript</a></li>
-          <li><a href="">snapchat</a></li>
-        </div>
-        <div class="">
-          <h3>quick link</h3>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">twitter</a></li>
-          <li><a href="">java</a></li>
-          <li><a href="">maicrosft</a></li>
-          <li><a href="">marscdes</a></li>
-        </div>
-        <div class="icon_cousual">
-          <li>
-            <a href="">
-              <img src="public/icon/shopping.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="public/icon/shopping.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="public/icon/shopping.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="public/icon/shopping.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="public/icon/shopping.svg" alt="">
-            </a>
-          </li>
-        </div>
-        <a href="#">All rights reserved to the company JOLT@2025</a>
-      </div>
-    </footer>
   </main>
-  <script src="src/javascript/navbar.js"></script>
-  <script src="src/javascript/product.js"></script>
+  <div id="site-shell"></div>
+  <script src="src/javascript/data.js"></script>
+  <script src="src/javascript/store.js"></script>
+  <script src="src/javascript/home.js"></script>
 </body>
-
 </html>
